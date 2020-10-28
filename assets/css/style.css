@@ -1,0 +1,306 @@
+/* base-class-start */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto Medium", serif;
+    font-size: 1.2rem;
+    color: var(--white);
+}
+
+:root {
+    --grey: #212121;
+    --blue: #2384e7;
+    --red: #df0024;
+    --white: #fff;
+    --lightgray: lightgray;
+}
+
+.content {
+    display: flex;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+.vertical {
+    flex-direction: column;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.btn {
+    background: var(--blue);
+    padding: 1rem 1rem;
+    border-radius: .5rem;
+}
+
+/* base-class-end */
+
+/* header-start */
+header.content {
+    background-color: var(--grey);
+}
+
+.logo {
+    flex-basis: 15rem;
+    margin-left: 2.5rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+.tel {
+    flex-basis: 15rem;
+    margin-right: 2rem;
+    gap: .5rem;
+}
+
+nav.menu {
+    flex-grow: 1;
+    gap: 3rem;
+}
+
+/* header-end */
+
+/* main-start */
+.about {
+    flex-basis: 35rem;
+    background: url('../img/about_company_bg.png') no-repeat center;
+    background-size: cover;
+    gap: 2rem;
+}
+
+.about h1 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.about p {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.about .btn {
+    margin-top: 2rem;
+    padding: 1rem 6rem;
+}
+
+/* main-end */
+
+/* catalog-start */
+.catalog {
+    flex-basis: 35rem;
+    gap: 1rem;
+    padding: 5rem;
+}
+
+.catalog h2 {
+    color: var(--grey);
+    font-size: 3rem;
+}
+
+.catalog h3 {
+    color: var(--grey);
+    font-size: 1.5rem;
+}
+
+.catalog .filter {
+    justify-content: space-between;
+}
+
+.catalog .filter label {
+    background-color: var(--blue);
+    flex-basis: 30rem;
+}
+
+.catalog .btn {
+    flex-basis: 15rem;
+    font-size: 2.5rem;
+    justify-content: space-between;
+}
+
+.catalog .btn .title {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.catalog .btn .border {
+    border-left: var(--white) solid 1px;
+    padding-left: 1rem;
+}
+
+.catalog .cars {
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.catalog article.car {
+    width: 25rem;
+    height: 25rem;
+    background-color: var(--blue);
+}
+
+/* catalog-end */
+
+/* contact-start */
+.contact {
+    align-items: flex-start;
+    flex-basis: 45rem;
+    background: url('../img/contact_form_bg.png') no-repeat center;
+    background-size: cover;
+}
+
+.contact .form {
+    width: 45rem;
+    height: 25rem;
+    margin-left: 5rem;
+    background-color: var(--white);
+    border-radius: .5rem;
+
+}
+
+.contact .row {
+    margin: 0 auto;
+    gap: 1rem;
+}
+
+.contact h2 {
+    color: var(--grey);
+    font-size: 3rem;
+}
+
+.contact p {
+    color: var(--grey);
+    font-size: 1rem;
+}
+
+.contact form {
+    align-items: center;
+}
+
+.contact .tel {
+    border-radius: .5rem;
+    border: var(--lightgray) solid 1px;
+    padding: 1rem;
+    color: var(--grey);
+}
+
+/* contact-end */
+
+/* footer-start */
+footer.content {
+    align-items: center;
+    min-height: 15rem;
+    background-color: var(--grey);
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+footer h3 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+footer .logo {
+    flex-basis: 25rem;
+}
+
+footer .social {
+    margin-right: 2.5rem;
+}
+
+/* footer-end */
+
+/*pad-start*/
+@media (max-width: 1024px) {
+    .tel {
+        margin: 1rem;
+        flex-basis: auto;
+    }
+
+    .logo {
+        margin: 1rem;
+    }
+
+    .catalog article.car {
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .contact .form {
+        margin: 0 auto;
+    }
+
+    footer.content {
+        padding: 1rem;
+    }
+
+    footer .logo {
+        order: 1;
+        flex-basis: auto;
+    }
+}
+
+/*pad-end*/
+
+/*mobile-start*/
+@media (max-width: 600px) {
+
+    .tel {
+        margin: 1rem;
+        flex-basis: auto;
+    }
+
+    .logo {
+        margin: 1rem;
+    }
+
+    .contact .form {
+        width: 100%;
+        margin: 0;
+    }
+
+    .contact form {
+        justify-content: center;
+    }
+
+    .contact h2, .contact p {
+        text-align: center;
+    }
+
+    .catalog {
+        padding: 0;
+        align-items: center;
+    }
+
+    .catalog .btn {
+        display: none;
+    }
+
+    .catalog article.car {
+        width: 100vw;
+    }
+
+    footer.content {
+        justify-content: center;
+        align-content: center;
+    }
+
+    footer h3 {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    footer .social {
+        margin-right: 0;
+    }
+}
+
+/*mobile-end*/
