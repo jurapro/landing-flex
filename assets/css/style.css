@@ -327,6 +327,7 @@ input[id='type-3']:checked ~ .cars .car:not(.type-3) {
 
 .footer .logo {
     flex-basis: 25rem;
+    align-self: center;
 }
 
 .footer .menu a {
