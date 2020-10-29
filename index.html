@@ -10,7 +10,7 @@
 </head>
 <body>
 <div class="content vertical">
-    <header class="content center wrap">
+    <header class="header content center wrap">
         <div class="logo">
             <img src="assets/img/logo.png" alt="logo" class="logo">
         </div>
@@ -19,7 +19,7 @@
             <a href="#"> Категории</a>
             <a href="#">Контакты</a>
         </nav>
-        <div class="tel content">
+        <div class="tel content center">
             <img src="assets/img/phone.png" alt="phone">
             <a href="tel:+79999999900">+7 999 999 9900</a>
         </div>
@@ -37,24 +37,100 @@
         <section class="catalog content vertical">
             <h2>Каталог</h2>
             <h3>Фильтр</h3>
-            <div class="filter content">
-                <div class="label">
-                    <label for="">Все</label>
-                    <label for="">КамАЗ</label>
-                    <label for="">Hyandai</label>
-                    <label for="">ГАЗ</label>
+            <input type="radio" name="filter" id="type-0" hidden>
+            <input type="radio" name="filter" id="type-1" hidden>
+            <input type="radio" name="filter" id="type-2" hidden>
+            <input type="radio" name="filter" id="type-3" hidden>
+            <div class="filter content center">
+                <div class="labels content">
+                    <label for="type-0" class="filter_label">Все</label>
+                    <label for="type-1" class="filter_label">КамАЗ</label>
+                    <label for="type-2" class="filter_label">Hyandai</label>
+                    <label for="type-3" class="filter_label">ГАЗ</label>
                 </div>
-                <a class="btn content">
-                    <span class="title">Каталог</span> <span class="border">&#9989;</span>
+                <a class="btn content btn_catalog">
+                    <span class="title">Каталог</span> <span class="border">&#9776;</span>
                 </a>
             </div>
             <section class="cars content wrap">
-                <article class="content car"></article>
-                <article class="content car"></article>
-                <article class="content car"></article>
-                <article class="content car"></article>
-                <article class="content car"></article>
-                <article class="content car"></article>
+                <article class="content car vertical center type-2" style="background-image: url('assets/img/cars/Hyundai/Hyundai-HD78/image.jpg')">
+                    <div class="info content vertical center">
+                        <h4>Hyundai HD78</h4>
+                        <a href="#" class="btn btn_details">
+                            <span class="title">Подробнее</span> <span class="border">&rarr;</span>
+                        </a>
+                    </div>
+                    <p class="description">
+                        Название: Hyundai HD78 <br>
+                        Год: 2016 <br>
+                        Цена 2 300 000 р.
+                    </p>
+                </article>
+                <article class="content car vertical center type-2" style="background-image: url('assets/img/cars/Hyundai/Hyundai-HD120/image.jpg')">
+                    <div class="info content vertical center">
+                        <h4>Hyundai-HD120</h4>
+                        <a href="#" class="btn btn_details">
+                            <span class="title">Подробнее</span> <span class="border">&rarr;</span>
+                        </a>
+                    </div>
+                    <p class="description">
+                        Название: Hyundai-HD120<br>
+                        Год: 2016 <br>
+                        Цена 1 300 000 р.
+                    </p>
+                </article>
+                <article class="content car vertical center type-3" style="background-image: url('assets/img/cars/Газ/2/image.jpg')">
+                    <div class="info content vertical center">
+                        <h4>ГАЗ 3307</h4>
+                        <a href="#" class="btn btn_details">
+                            <span class="title">Подробнее</span> <span class="border">&rarr;</span>
+                        </a>
+                    </div>
+                    <p class="description">
+                        Название: ГАЗ 3307<br>
+                        Год: 2006 <br>
+                        Цена 600 000 р.
+                    </p>
+                </article>
+                <article class="content car vertical center type-3" style="background-image: url('assets/img/cars/Газ/1/image.jpg')">
+                    <div class="info content vertical center">
+                        <h4>ГАЗ 2784</h4>
+                        <a href="#" class="btn btn_details">
+                            <span class="title">Подробнее</span> <span class="border">&rarr;</span>
+                        </a>
+                    </div>
+                    <p class="description">
+                        Название: ГАЗ 2784<br>
+                        Год: 2007 <br>
+                        Цена 300 000 р.
+                    </p>
+                </article>
+                <article class="content car vertical center type-1" style="background-image: url('assets/img/cars/Камаз/1/image.jpg')">
+                    <div class="info content vertical center">
+                        <h4>КамАЗ 6511</h4>
+                        <a href="#" class="btn btn_details">
+                            <span class="title">Подробнее</span> <span class="border">&rarr;</span>
+                        </a>
+                    </div>
+                    <p class="description">
+                        Название: КамАЗ 6511<br>
+                        Год: 2013 <br>
+                        Цена 1 990 000 р.
+                    </p>
+                </article>
+                <article class="content car vertical center type-1" style="background-image: url('assets/img/cars/Камаз/2/image.jpg')">
+                    <div class="info content vertical center">
+                        <h4>КамАЗ 6520</h4>
+                        <a href="#" class="btn btn_details">
+                            <span class="title">Подробнее</span> <span class="border">&rarr;</span>
+                        </a>
+                    </div>
+                    <p class="description">
+                        Название: КамАЗ 6520<br>
+                        Год: 2016 <br>
+                        Цена 5 000 000 р.
+                    </p>
+                </article>
             </section>
         </section>
         <section class="contact content center vertical">
@@ -62,7 +138,7 @@
                 <div class="row content vertical">
                     <h2>Остались вопросы?</h2>
                     <p>Оставьте свой номер телефона и наши менеджеры свяжутся с вами.</p>
-                    <form action="" class="content wrap">
+                    <form action="" class="contact_form content wrap">
                         <input type="text" class="tel" placeholder="Номер телефона">
                         <a href="#" class="btn">Отправить</a>
                     </form>
@@ -70,15 +146,15 @@
             </article>
         </section>
     </main>
-    <footer class="content wrap">
+    <footer class="footer content wrap center">
         <div class="logo">
             <img src="assets/img/logo.png" alt="logo" class="logo">
         </div>
         <div>
             <h3>Контакты</h3>
-            <div class="tel content">
-            <img src="assets/img/phone.png" alt="phone">
-            <a href="tel:+79999999900">+7 999 999 9900</a>
+            <div class="tel content center">
+                <img src="assets/img/phone.png" alt="phone">
+                <a href="tel:+79999999900">+7 999 999 9900</a>
             </div>
         </div>
         <div>
